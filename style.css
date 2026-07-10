@@ -37,8 +37,7 @@
      border-radius: 4px;
      background: #FFFFFF;
      border: 1px solid #BBBBBB;
-     margin-bottom: 24px;
-     appearance: none;
+     margin-bottom: 24px;;
      padding-left: 18px;
      font-weight: 700;
      font-size: 16px;
@@ -54,6 +53,15 @@
      font-weight: 700;
      font-size: 18px;
      color: #FFFFFF;
+     cursor: pointer;
+ }
+
+ button:hover {
+     opacity: 0.8;
+ }
+
+ button:active {
+    opacity: 0.6;
  }
 
  section {
