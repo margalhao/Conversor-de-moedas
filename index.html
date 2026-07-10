@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <title>Conversor Online</title>
 </head>
 
@@ -24,30 +24,30 @@
 
         <label>
             Converter para
-            <select>
-                <option>US$ Dólar Americano</option>
-                <option>€ Euro</option>
+            <select class="currency-select">
+                <option value="dollar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
             </select>
         </label>
 
         <label>
             Valor
-            <input placeholder="Valor" </label>
+            <input class="input-currency" placeholder="Valor" </label>
 
-            <button> Converter</button>
+            <button class="convert-button"> Converter</button>
 
             <section>
                 <div class="currency-box">
                     <img src="./assets/real.png" alt="moeda-real">
                     <p class="currency">Real</p>
-                    <p class="currency-value">R$ 0,00</p>
+                    <p class="currency-value-to-convert">R$ 0,00</p>
                 </div>
 
                 <img class="arrow-img" src="./assets/arrow.png" alt="seta-baixo">
 
                 <div class="currency-box">
-                    <img src="./assets/dollar.png" alt="moeda-dolar">
-                    <p class="currency">Dólar</p>
+                    <img class="currency-img" src="./assets/dollar.png" alt="moeda-dolar">
+                    <p class="currency" id="currency-name">Dólar</p>
                     <p class="currency-value">US$ 0,00</p>
                 </div>
             </section>
