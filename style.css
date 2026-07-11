@@ -97,3 +97,8 @@
      font-size: 20px;
      color: #555555;
  }
+
+ .currency-img-1, .currency-img-2 {
+     width: 44px;
+     height: 44px;
+ }
